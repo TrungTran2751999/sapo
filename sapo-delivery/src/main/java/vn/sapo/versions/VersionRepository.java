@@ -6,7 +6,7 @@ import vn.fx.qh.sapo.entities.Application;
 
 import java.util.Optional;
 
-
+@Repository
 public interface VersionRepository extends JpaRepository<Application,Integer> {
     Optional<Application> findAllByAppKey(String appKey);
 }
